@@ -39,6 +39,18 @@ int main() {
 		somaexp = 40;
 	}
 	cout << "Pontos por experiencia: " << somaexp << endl;
-	
+	cout << endl;
+	if(somaesc <= 10){
+		cout << "Infelizmente seu perfil nao atende a empresa" << endl;
+	}else{
+		cout << "Voce esta habilitado para o(s) seguinte(s) cargo(s): "<< endl;
+	if(somaesc >= 20 && habilitacao == "S"){
+		cout << "ASSISTENTE" << endl;
+	} if(somaesc >= 30 && somaexp >= 20){
+		cout << "GERENTE" << endl;
+	} if(somaesc >= 40 && somaexp >= 40 && viaja == "S"){
+		cout << "ANALISTA" << endl;
+	}
+}
 	return 0;
 }
